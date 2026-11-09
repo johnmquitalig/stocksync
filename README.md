@@ -7,7 +7,7 @@
 2. Put `server.js`, `index.html` and `package.json` in one folder.
 3. In a terminal inside that folder: `node server.js`  (or `npm start`)
 4. Open http://localhost:3000
-5. Log in: `maya@stocksync.com` / `admin123`
+5. Log in: `john@stocksync.com` / `tsm3b`
 
 The database file `stocksync.db` is created automatically on first run with demo data.
 Delete that file (or use Settings > Reset demo data) to start fresh.
