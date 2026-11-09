@@ -34,7 +34,7 @@ function seed() {
     ['order_items', 'orders', 'products', 'suppliers', 'activity', 'store'].forEach(t => db.exec('DELETE FROM ' + t));
     db.exec("DELETE FROM sqlite_sequence");
     setUser('john@stocksync.com', 'tsm3b');
-    db.prepare('INSERT INTO store VALUES(1,?,?,?)').run('Maya Boutique', 'Maya', 'Tarlac City');
+    db.prepare('INSERT INTO store VALUES(1,?,?,?)').run('John Michael', 'John', 'Tarlac City');
     const P = [['Linen Blend Shirt', 'LBS-001', 'M', 'Sage', 3, 38, 10], ['Tailored Sand Blazer', 'TSB-012', 'L', 'Sand', 5, 120, 10],
       ['Classic Shoulder Bag', 'CSB-042', 'One size', 'Tan', 8, 65, 10], ['Classic Cotton Tee', 'CCT-100', 'M', 'White', 86, 18, 15],
       ['Denim Jacket', 'DNJ-210', 'L', 'Blue', 24, 75, 8], ['Pleated Midi Skirt', 'PMS-330', 'S', 'Black', 17, 42, 8],
@@ -59,7 +59,7 @@ function seed() {
 }
 if (!db.prepare('SELECT 1 FROM users').get()) seed();
 // Existing databases still holding the old default login get the new one
-if (db.prepare("SELECT 1 FROM users WHERE email='maya@stocksync.com'").get()) setUser('john@stocksync.com', 'tsm3b');
+if (db.prepare("SELECT 1 FROM users WHERE email='@stocksync.com'").get()) setUser('john@stocksync.com', 'tsm3b');
 
 const state = () => {
   const items = {};
