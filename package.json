@@ -4,5 +4,5 @@
   "description": "StockSync - smart stock tracking for small clothing businesses",
   "main": "server.js",
   "scripts": { "start": "node server.js" },
-  "engines": { "node": ">=22.5" }
+  "engines": { "node": ">=22.5 <25" }
 }
