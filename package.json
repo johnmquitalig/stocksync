@@ -1,0 +1,8 @@
+{
+  "name": "stocksync",
+  "version": "1.0.0",
+  "description": "StockSync - smart stock tracking for small clothing businesses",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=22.5" }
+}
